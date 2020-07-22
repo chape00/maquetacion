@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PLANTILLA FINAL</title>
+
+    <!-- Librerías CSS -->
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fontawesome-5.13.1/css/all.min.css">
+    <!-- Librerías CSS Propias -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Librerías JS -->
+    <script src="lib/jquery/js/jquery-3.5.1.min.js"></script>
+    <script src="lib/bootstrap-4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Librerías JS Propias -->
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navegacion-principal">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-ellipsis-v"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acercade.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <header class="header-paginas d-flex align-items-center">
+      <div class="container mg-top-100">
+        <h1>Contacto</h1>
+      </div>
+    </header>
+
+    <main>
+
+      <form action="" method="get" class="needs-validation formcontacto" novalidate>
+        <div class="container">
+
+          <div class="row pt-4">
+            <div class="col-12 col-md-6 text-md-right">
+              <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+              <div class="invalid-feedback">
+                Ingrese su nombre!
+              </div>
+            </div>
+            <div class="col-12 col-md-6 pt-4 pt-md-0">
+              <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+              <div class="invalid-feedback">
+                Ingrese su mail!
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 text-md-right">
+              <label for="select1">Area</label>
+              <select class="form-control" name="select1">
+                <option>Administración</option>
+                <option>Ventas</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="fecha">Fecha de nacimiento</label>
+              <input class="form-control" type="date" name="fecha" required>
+              <div class="invalid-feedback">
+                Ingrese la fecha de nacimiento!
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-4">
+            <div class="col-12 text-md-center">
+                <textarea class="form-control" name="textarea1" rows="3"></textarea>
+            </div>
+          </div>
+
+          <div class="row pt-4 pl-4">
+            <div class="col-12">
+              <input type="checkbox" class="form-check-input" name="check1">
+              <label class="form-check-label" for="check1">Recibir newsletter</label>
+            </div>
+          </div>
+
+          <div class="row pt-4">
+            <div class="col-12 text-md-right">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+
+      <div class="container-fluid px-0 pt-4">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209.08370720853122!2d-60.88170857781805!3d-33.02118990858102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6597245e69886f66!2sCFC%20Soluciones%20Inform%C3%A1ticas!5e0!3m2!1ses-419!2sar!4v1595450827871!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center border p-4 rowfooter">
+
+          <div class="col-12 col-md-4 p-2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-12 col-md-4 p-2">
+            <h4>Redes solciales</h4>
+            <a href="http://www.whatsapp.com"><img src="img/wp.jpg"></a>
+            <a href="http://www.facebook.com"><img src="img/fb.png"></a>
+            <a href="http://www.instagram.com"><img src="img/inst.jpg"></a>
+          </div>
+          <div class="col-12 col-md-4 p-2">
+            <h3 class="mb-4">Suscribirse al newsletter</h3>
+            <form action="" method="get" class="needs-validation" novalidate>
+              <div class="p-2">
+                <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+                <div class="invalid-feedback">
+                  Ingrese su nombre!
+                </div>
+                <div class="valid-feedback">
+                  Genial!
+                </div>
+              </div>
+              <div class="p-2">
+                <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                <div class="invalid-feedback">
+                  Ingrese su mail!
+                </div>
+                <div class="valid-feedback">
+                  Genial!
+                </div>
+              </div>
+              <div class="p-2">
+                <input type="submit" name="button" class="btn btn-outline-warning">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Librerías JS Propias -->
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>

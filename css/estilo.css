@@ -1,0 +1,191 @@
+@import url("/fonts/lobster-regular.ttf");
+
+.navegacion-principal {
+  background-color: #FFF;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.navegacion-principal .nav-link {
+  color: #000;
+}
+
+.navegacion-principal .navbar-brand img {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-toggler i {
+  font-size: 20px;
+  color: black;
+}
+
+.servicios i {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.servicios div[class*="col-"] {
+  display: flex;
+  justify-content: center;
+}
+
+.header-paginas {
+  margin-top: 43.5px;
+  background-color: #33b5ff;
+  height: 300px;
+  position: relative;
+}
+
+.header-paginas h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* Galería */
+
+.galeria h2 {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.item-galeria {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hover-galeria {
+  background-color: rgba(1, 1, 1, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: .2;
+}
+
+.hover-galeria i {
+  color: white;
+  font-size: 30px;
+}
+
+.hover-galeria a {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.item-galeria:hover .hover-galeria {
+  opacity: 1;
+  transition: .3s;
+}
+
+/* calltoaction */
+
+/* La gradiente la generé desde https://www.cssmatic.com/es/gradient-generator */
+.calltoaction {
+background: rgba(179,220,237,1);
+background: -moz-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 54%, rgba(188,224,238,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179,220,237,1)), color-stop(54%, rgba(41,184,229,1)), color-stop(100%, rgba(188,224,238,1)));
+background: -webkit-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 54%, rgba(188,224,238,1) 100%);
+background: -o-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 54%, rgba(188,224,238,1) 100%);
+background: -ms-linear-gradient(left, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 54%, rgba(188,224,238,1) 100%);
+background: linear-gradient(to right, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 54%, rgba(188,224,238,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
+}
+
+.rowcalltoaction {
+  padding: 20px;
+}
+
+.calltoaction1 {
+  height: 360px;
+  text-align: right;
+  background-image: url("http://placeimg.com/360/360/tech");
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: 'Lobster', cursive;
+  color: white;
+}
+
+.calltoaction1 h2 {
+  font-size: 60px;
+  padding-top: 60px;
+}
+
+.calltoaction1 h3 {
+  font-size: 45px;
+}
+
+.calltoaction2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.rowfooter div {
+  text-align: center;
+}
+
+.rowfooter img {
+  width: 92px;
+  height: 92px;
+  border-radius: 20px;
+}
+
+.rowfooteracercade {
+  background-image: url("../img/acercadefoot.jpg");
+  background-size: cover;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.rowfooteracercade p {
+  color: white;
+}
+
+#intro img {
+  height: 100px;
+  width: 100px;
+}
+
+#pop-up {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal .navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header-paginas {
+    margin-top: 60px;
+  }
+
+  .calltoaction2 {
+    padding-top: 160px;
+  }
+
+  .calltoaction2 button{
+    width: 150px;
+    height: 50px;
+
+}
+
+@media (min-width: 992px) {
+
+  .calltoaction1 h2 {
+    padding-top: 120px;
+  }
+
+}
